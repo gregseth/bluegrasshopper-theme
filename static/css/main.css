@@ -18,7 +18,9 @@
 /***** Global *****/
 /* Body */
 body {
-    background: url("wavecut.png");
+  	background-image:url('../img/grasshopper.png'), url('../img/gradient.png');
+  	background-repeat: no-repeat, repeat-x;
+    background-attachment: fixed;
     font-family: 'Droid Sans', sans-serif;
     font-size: 14px ;
     line-height: 1.429;
@@ -51,19 +53,19 @@ hr { border: 2px solid #EEEEEE; }
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-	color: #7A4700;
+	color: #618697;
 	padding: 0 1px;
 	text-decoration: underline;
 }
 a:hover, a:active {
-	background-color: #7A4700;
 	color: #fff;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #333;
+	text-shadow: 1px 1px 2px #618697,0px 0px 6px #618697;
 }
 
 h1 a:hover {
-    background-color: inherit
+	text-shadow: .05em .05em .2em #666;
+    background-color: inherit;
 }
 	
 /* Paragraphs */
@@ -72,8 +74,8 @@ p {margin-bottom: 1.143em;}
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
 
-::-moz-selection {background: #F6CF74; color: #fff;}
-::selection {background: #F6CF74; color: #fff;}
+::-moz-selection {background: rgba(97,134,151,0.5); color: #fff;}
+::selection {background: rgba(97,134,151,0.5); color: #fff;}
 
 /* Lists */
 ul {
@@ -86,15 +88,23 @@ ol {
 	margin: 1em 0 1.5em 1.5em;
 }
 
-.post-info {
-    float:right;
+#featured .post-info {
     margin:5px;
     padding:9px;
+}
+
+#featured .post-info * {
+	display: inline;
+/*	float:left;*/
+}
+#featured .post-info p:before {
+    content: '— ';
 }
 
 .post-info p{
     margin-bottom: 1px;
 }
+
 
 .readmore { float: right }
 
@@ -144,8 +154,13 @@ aside, nav, article, figure {
 	display: block;
 }
 
+article > p {
+	padding: 0 3em;
+	text-align: justify;
+}
+
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
+.body {clear: both; margin: 0 auto; width: 600px;}
 img.right figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
@@ -169,8 +184,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #7A4700;
-		text-shadow: none;
+		color: #000000;
+		text-shadow: 0px 0px .5em #618697;
 	}
 	
 	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
@@ -184,14 +199,14 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		margin: 0 auto 2em auto;
 		padding: 0;
 		text-align: center;
-		width: 800px;
+		width: 600px;
 		
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
 	
-	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav ul {list-style: none; margin: 0 auto; width: 600px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 	
 	#banner nav a:link, #banner nav a:visited {
@@ -203,7 +218,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #C74451;
+		background: #253c47;
 		color: #fff;           
 		text-shadow: none !important;
 	}
@@ -228,7 +243,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px;
-	width: 760px;
+	width: 560px;
 	
 	border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -243,7 +258,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h2 {color: #253c47; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
@@ -258,7 +273,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px 20px;
-	width: 760px;
+	width: 560px;
 	
 	border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -282,7 +297,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #extras a:link, #extras a:visited {
 	color: #444;
 	display: block;
-	border-bottom: 1px solid #F4E3E3;
+	border-bottom: 1px solid #f5e4e4;
 	text-decoration: none;
 	padding: .3em .25em;
 }

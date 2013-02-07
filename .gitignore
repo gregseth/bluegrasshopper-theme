@@ -1,1 +1,3 @@
 *.psd
+*.swp
+.DS_Store
