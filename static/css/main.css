@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h4, h5, h6 { margin-top: .8em; }
 	
-hr { border: 2px solid #EEEEEE; }
+hr { border: 2px solid #DDD; }
 
 /* Anchors */
 a {outline: 0;}
@@ -160,7 +160,11 @@ article > p {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 600px;}
+.body {
+	clear: both; 
+	margin: 0 auto;
+	width: 600px;
+}
 img.right figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
@@ -185,7 +189,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
 		color: #000000;
-		text-shadow: 0px 0px .5em #618697;
+		text-shadow:0px 0px .1em #FFFFFF, 0px 0px .5em #618697;
+		
 	}
 	
 	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
@@ -200,6 +205,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		padding: 0;
 		text-align: center;
 		width: 600px;
+		border: solid 1px #000;
 		
 		border-radius: 5px;
 		-moz-border-radius: 5px;
@@ -210,6 +216,11 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 	
 	#banner nav a:link, #banner nav a:visited {
+	
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		
 		color: #fff;
 		display: inline-block;
 		height: 30px;
@@ -220,7 +231,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	#banner nav .active a:link, #banner nav .active a:visited {
 		background: #253c47;
 		color: #fff;           
-		text-shadow: none !important;
+		text-shadow: none;
+		
+		box-shadow: inset 0px 0px .8em #80d7ff;
 	}
 	
 	#banner nav li:first-child a {
@@ -238,7 +251,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 *****************/
 #featured {
 	
-	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat, url("white.png") repeat;
+	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat/*, url("white.png") repeat*/;
 	background-position: top,bottom,top;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -248,6 +261,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
+	
+	background-color:rgba(219,232,240,0.14);
 }
 
 #featured figure {
@@ -268,7 +283,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	Body
 *****************/
 #content {
-	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat, url("white.png") repeat;
+	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat/*, url("white.png") repeat*/;
 	background-position: top,bottom,top;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -278,6 +293,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
+	
+	background-color:rgba(219,232,240,0.14);
 }
 
 /*
@@ -307,15 +324,15 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	/* Blogroll */
 	#extras .blogroll {
 		float: left;
-		width: 615px;
+		width: 66%;
 	}
 	
-	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
+	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 178px;}
 	
 	/* Social */
 	#extras .social {
 		float: right;
-		width: 175px;
+		width: 33%;
 	}
 	
 	#extras div[class='social'] a {
@@ -327,19 +344,19 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		/* Icons */
 		
 
-		.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');
+		.social a[href*='facebook.com'] {background-image: url('../img/icons/facebook.png');
 		background-size: 16px 16px; }
-		.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter_alt.png');
+		.social a[href*='twitter.com'] {background-image: url('../img/icons/twitter_alt.png');
 		background-size: 16px 16px;  }
-		.social a[href*='quora.com'] {background-image: url('../images/icons/quora.png');
+		.social a[href*='quora.com'] {background-image: url('../img/icons/quora.png');
 		background-size: 16px 16px; }
-		.social a[href*='github.com'] {background-image: url('../images/icons/github.png');
+		.social a[href*='github.com'] {background-image: url('../img/icons/github.png');
 		background-size: 16px 16px; }
-		.social a[href*='news.ycombinator.com'] {background-image: url('../images/icons/hacker_news.png');
+		.social a[href*='news.ycombinator.com'] {background-image: url('../img/icons/hacker_news.png');
 		background-size: 16px 16px; }
-		.social a[href*='instapaper.com'] {background-image: url('../images/icons/instapaper.png');
+		.social a[href*='instapaper.com'] {background-image: url('../img/icons/instapaper.png');
 		background-size: 16px 16px; }
-		.social a[href*='hypem.com'] {background-image: url('../images/icons/hype_machine.png');
+		.social a[href*='hypem.com'] {background-image: url('../img/icons/hype_machine.png');
 		background-size: 16px 16px; }
 
 
@@ -378,7 +395,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 .hentry {
 	display: block;
 	clear: both;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #DDD;
 	padding: 1.5em 0;
 }
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
