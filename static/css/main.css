@@ -47,7 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h4, h5, h6 { margin-top: .8em; }
 	
-hr { border: 2px solid #DDD; }
+hr { 
+	border:none;
+	border-bottom: 1px solid #DDD; 
+}
 
 /* Anchors */
 a {outline: 0;}
@@ -63,8 +66,9 @@ a:hover, a:active {
 	text-shadow: 1px 1px 2px #618697,0px 0px 6px #618697;
 }
 
+
 h1 a:hover {
-	text-shadow: .05em .05em .2em #666;
+	text-shadow: .05em .05em .2em #999;
     background-color: inherit;
 }
 	
@@ -303,6 +307,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	
 	background-color:rgba(219,232,240,0.14);
 }
+	#content .post-info {
+		display:none;
+	}
 
 /*
 	Extras
