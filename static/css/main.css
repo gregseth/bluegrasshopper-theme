@@ -14,6 +14,10 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
+@font-face { 
+    font-family: "Bryant";
+    src: url('bryant-regularalt.ttf');
+}
 
 /***** Global *****/
 /* Body */
@@ -21,8 +25,9 @@ body {
   	background-image:url('../img/grasshopper.png'), url('../img/gradient.png');
   	background-repeat: no-repeat, repeat-x;
     background-attachment: fixed;
-    font-family: 'Droid Sans', sans-serif;
-    font-size: 14px ;
+    background-position: top 100px, top left;
+    font-family:  'Bryant',/*'Droid Sans',*/ sans-serif;
+    font-size: 15px ;
     line-height: 1.429;
     margin: 0;
     padding: 0;
