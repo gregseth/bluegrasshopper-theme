@@ -210,7 +210,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	
 	/* Main Nav */
 	#banner nav {
-		background: #000305;
+		background: #000406;
 		font-size: 1.143em;
 		height: 40px;
 		line-height: 30px;
@@ -219,6 +219,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		text-align: center;
 		width: 600px;
 		border: solid 1px #000;
+		opacity: .9;
 		
 		border-radius: 5px;
 		-moz-border-radius: 5px;
