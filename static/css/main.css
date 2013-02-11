@@ -22,10 +22,10 @@
 /***** Global *****/
 /* Body */
 body {
-  	background-image:url('../img/grasshopper.png'), url('../img/gradient.png');
+  	background-image:url('../img/grasshopper-wide.jpg'), url('../img/gradient.png');
   	background-repeat: no-repeat, repeat-x;
     background-attachment: fixed;
-    background-position: top 100px, top left;
+    background-position: center top, left top;
     font-family:  'Bryant',/*'Droid Sans',*/ sans-serif;
     font-size: 15px ;
     line-height: 1.429;
@@ -283,7 +283,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	-webkit-border-radius: 0px;
 	
 	background-color:rgba(219,232,240,0.14);
-}
+	border-left: solid 1px rgba(255,255,255,.4);
+	border-left: solid 1px rgba(255,255,255,.4);
+	}
 
 #featured figure {
 	border: 2px solid #eee;
@@ -315,6 +317,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	-webkit-border-radius: 0px;
 	
 	background-color:rgba(219,232,240,0.14);
+	border-left: solid 1px rgba(255,255,255,.4);
+	border-left: solid 1px rgba(255,255,255,.4);
 }
 
 /*
