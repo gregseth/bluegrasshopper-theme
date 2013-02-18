@@ -84,7 +84,10 @@ p {
 	padding: 0 3em;
 	text-align: justify;
 }
-
+p img {
+	width:auto;
+	max-width: 470px;
+}
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
 
