@@ -4,6 +4,8 @@
         <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+        
+        <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" title="{{ SITENAME }}" type="application/rss+xml" />
    
 
         <!--[if IE]>
