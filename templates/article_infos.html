@@ -3,12 +3,10 @@
                 {{ article.locale_date }}
         </abbr>
 
-        {% if article.author %}
         <address class="vcard author">
-                Par <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+                par <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> dans <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
         </address>
-        {% endif %}
-<p>Dans <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">Version pdf</a>{% endif %}</p>
+ {% if PDF_PROCESSOR %}<p><a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">Version pdf</a></p>{% endif %}
 {% include 'taglist.html' %}
 {% include 'translations.html' %}
 </footer><!-- /.post-info -->

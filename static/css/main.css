@@ -113,7 +113,7 @@ ol {
 #featured .post-info * {
 	display: inline;
 }
-#featured .post-info p:before {
+#featured .post-info .taglist:before {
     content: '— ';
 }
 
@@ -275,7 +275,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 *****************/
 #featured {
 	
-	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat/*, url("white.png") repeat*/;
+	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat;
 	background-position: top,bottom,top;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -309,7 +309,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	Body
 *****************/
 #content {
-	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat/*, url("white.png") repeat*/;
+	background: url("toptop.png") no-repeat, url('downdown.png') no-repeat;
 	background-position: top,bottom,top;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -432,7 +432,19 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .hentry .post-info * {font-style: normal;}
 
 	/* Content */
-	.hentry footer {margin-bottom: 2em;}
+	.hentry footer 
+	{
+		width: 150px;
+		margin: 0 2em 1em 0;
+		padding: 5px;
+		background: rgba(255,255,255,.5);
+		box-shadow: 0 0 8px #FFF ;
+	}
+	footer .tag
+	{
+		padding-left: 16px;
+		background: url('../img/tag.png') no-repeat left center;
+	}
 	.hentry footer address {display: inline;}
 	#posts-list footer address {display: block;}
 
