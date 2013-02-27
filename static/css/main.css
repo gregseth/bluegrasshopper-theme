@@ -81,12 +81,13 @@ h1 a:hover {
 p {
 	margin-bottom: 1.143em;
 
-	padding: 0 3em;
+	padding: 0;
 	text-align: justify;
 }
 p img {
-	width:auto;
-	max-width: 470px;
+	width:100%;
+	margin: auto;
+	text-align: center;
 }
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
@@ -446,11 +447,14 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		background: url('../img/tag.png') no-repeat left center;
 	}
 	.hentry footer address {display: inline;}
+	.henthy .comment {
+		margin-left: 0;
+	}
 	#posts-list footer address {display: block;}
 
 	/* Blog Index */
 	#posts-list {list-style: none; margin: 0;}
-	#posts-list .hentry {padding-left: 10px; position: relative;}
+	#posts-list .hentry {position: relative;}
 	
 	#posts-list footer {
 		left: 10px;
