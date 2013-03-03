@@ -1,3 +1,15 @@
 {% if TWITTER_USERNAME %}
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{TWITTER_USERNAME}}">Twitter</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<section id="twitter-button">
+  <div class="button">
+  	<!--<a href="https://twitter.com/{{TWITTER_USERNAME}}" class="twitter-follow-button" data-show-count="false" data-size="large">@{{TWITTER_USERNAME}}</a>-->
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-size="small" data-via="{{TWITTER_USERNAME}}"></a>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </div>
+  <div class="cover">
+    <div class="innie"></div>
+    <div class="spine"></div>
+    <div class="outie"></div>
+</div>
+  <div class="shadow"></div>
+</section>
 {% endif %}

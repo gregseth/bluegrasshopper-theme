@@ -11,8 +11,7 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-/*@import url(http://fonts.googleapis.com/css?family=Droid+Sans);*/
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 
 @font-face { 
     font-family: "Bryant";
@@ -26,7 +25,8 @@ body {
   	background-repeat: no-repeat, repeat-x, repeat;
     background-attachment:fixed, fixed, scroll;
     background-position: center top, left top, left top;
-    font-family:  'Bryant',/*'Droid Sans',*/ sans-serif;
+    background-color: #FFF;
+    font-family:  'Bryant', sans-serif;
     font-size: 15px ;
     line-height: 1.429;
     margin: 0;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: .8em;
-	font-family: 'Lobster', cursive;
+	font-family: 'Permanent Marker', cursive;
 	
 }
 
@@ -106,15 +106,15 @@ ol {
 	margin: 1em 0 1.5em 1.5em;
 }
 
-#featured .post-info {
+#featured .post-info, article:not(.hentry) .entry-content .post-info {
     margin:5px;
     padding:9px;
 }
 
-#featured .post-info * {
+#featured .post-info *, article:not(.hentry) .entry-content .post-info * {
 	display: inline;
 }
-#featured .post-info .taglist:before {
+#featured .post-info .taglist:before, article:not(.hentry) .entry-content .post-info .taglist:before {
     content: '— ';
 }
 
@@ -126,6 +126,13 @@ ol {
 
 
 .readmore { float: right }
+
+.comments { margin-top:2em; }
+
+#sharing-tools 
+{
+	text-align: center;
+}
 
 dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
@@ -430,6 +437,14 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
+
+footer + p:first-letter {
+	font-size: 3em;
+	float: left;
+	height:1em;
+	margin-top: -.2em;
+	padding: 0;
+}
 
 .hentry .post-info * {font-style: normal;}
 
