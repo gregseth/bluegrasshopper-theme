@@ -8,6 +8,12 @@
         <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" title="{{ SITENAME }}" type="application/rss+xml" />
         
         <link rel="shortcut icon" href="/favicon.ico" />
+        
+        <script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+        
+        {% if TWITTER_USERNAME %}
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/twitter.css" type="text/css" />
+		{% endif %}
 
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
