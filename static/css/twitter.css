@@ -103,3 +103,4 @@ small a:hover { border-bottom-color: #222; }
 
 /* Twitter font icon: http://codepen.io/bennettfeely/pen/GCAKJ */
 @font-face { font-family:icon; src: url('http://bennettfeely.com/fonts/icons.woff'); }
+@import url(http://weloveiconfonts.com/api/?family=zocial);
