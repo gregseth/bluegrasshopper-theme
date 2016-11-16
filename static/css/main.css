@@ -224,8 +224,10 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
 	/* Main Nav */
 	#banner nav {
+	    font-family: Gruppo, sans-serif;
 		background: #000406;
-		font-size: 1.143em;
+		font-size: 1.2em;
+        font-weight: bold;
 		height: 40px;
 		line-height: 30px;
 		margin: 0 auto 2em auto;
@@ -240,7 +242,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		-webkit-border-radius: 5px;
 	}
 
-	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px; padding: 0 1em;}
 	#banner nav li {float: left; display: inline; margin: 0 1px 0 0;}
 
 	#banner nav a:link, #banner nav a:visited {
@@ -252,7 +254,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		color: #fff;
 		display: inline-block;
 		height: 30px;
-		padding: 2px 1.5em;
+		padding: 2px 1em;
 		text-decoration: none;
 		border: solid 3px transparent;
 	}
@@ -436,11 +438,12 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title a:visited {background-color: #fff;}
 
 footer + p:first-letter {
-	font-size: 3em;
+	font-size: 4em;
 	float: left;
 	height:1em;
 	padding: 0;
-    margin-top: .1em;
+    margin: .1em .1em 0 0;
+	font-family: Gruppo, sans-serif;
 }
 .hentry .post-info { display: none; }
 .hentry .post-info * {font-style: normal;}
