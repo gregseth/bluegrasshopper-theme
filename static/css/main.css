@@ -62,7 +62,7 @@ a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
 	color: #618697;
-	padding: 0 1px;
+	padding: 0;
 	text-decoration: underline;
 }
 a:hover, a:active {
