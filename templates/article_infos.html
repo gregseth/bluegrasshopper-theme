@@ -1,12 +1,13 @@
 <footer class="post-info">
-        <abbr class="published" title="{{ article.date.isoformat() }}">
+        <span class="published" >
                 {{ article.locale_date }}
-        </abbr>
-
+        </span>
         <address class="vcard author">
                 par <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> dans <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
         </address>
+<!--
 {% if PDF_PROCESSOR %}<p><a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">Version pdf</a></p>{% endif %}
 {% include 'taglist.html' %}
 {% include 'translations.html' %}
+-->
 </footer><!-- /.post-info -->
