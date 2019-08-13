@@ -443,6 +443,18 @@ footer + p:first-letter {
     margin: .1em .1em 0 0;
 	font-family: Gruppo, sans-serif;
 }
+/* chrome only override */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    footer + p:first-letter {
+        margin: -.4em .1em -.4em 0;
+    }
+}
+/* firefox only override */
+@-moz-document url-prefix() {
+    footer + p:first-letter {
+        margin: .1em .1em 0 0;
+    }
+}
 .hentry .post-info { display: none; }
 .hentry .post-info * {font-style: normal;}
 
