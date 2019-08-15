@@ -161,8 +161,11 @@ div.note {
 
 /* Tables */
 table {margin: .5em auto 1.5em auto; width: 98%;}
-
-	/* Thead */
+    th:nth-child(2n), td:nth-child(2n) {
+        background: rgba(255,255,255,.7);
+    }
+    /* Thead */
+    thead { border-bottom: solid 2px; }
 	thead th {padding: .5em .4em; text-align: left;}
 	thead td {}
 
