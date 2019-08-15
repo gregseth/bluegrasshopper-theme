@@ -440,7 +440,7 @@ footer + p:first-letter {
 	float: left;
 	height:1em;
 	padding: 0;
-    margin: .1em .1em 0 0;
+    margin: -.4em .1em 0 0;
 	font-family: Gruppo, sans-serif;
 }
 /* chrome only override */
